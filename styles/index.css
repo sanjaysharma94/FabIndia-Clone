@@ -1,0 +1,130 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+#navbar_append{
+  width: 100%;
+  background-color: white;
+  
+}
+#navbar {
+  width: 100%;
+  height: 90px;
+  display: inline-flex;
+}
+#nav-left {
+  width: 100px;
+  height: 50%;
+  justify-content: left;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+}
+#nav-left > div + div {
+  margin-left: 30px;
+}
+.iconimg {
+  width: 20px;
+}
+#logo {
+  width: 150px;
+  height: 80%;
+  margin: auto;
+}
+.logo {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+#nav-right {
+  width: 300px;
+  height: 100%;
+  justify-content: end;
+}
+#nav-right > div > div > a {
+  color: black;
+  text-decoration-line: none;
+  margin-right: 5px;
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 12px;
+}
+#india {
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 30px;
+}
+#nav-right-sub {
+  display: flex;
+  width: 80%;
+}
+#nav-right-sub > div + div {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+/* The navigation menu */
+#cat {
+  width: 90%;
+  margin: auto;
+}
+.subnavbar {
+  overflow: hidden;
+  background-color: white;
+}
+/* Navigation links */
+.subnavbar a {
+  margin-left: 50px;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+.subnavbar {
+  float: left;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnavbar .subnavbtn {
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnavbar a:hover {
+  background-color: rgb(155, 223, 255);
+  display: block;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  background-color: #620613;
+  width: 10%;
+  padding-right: 70%;
+  margin: auto;
+  margin-top: 1px;
+}
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnavbar:hover .subnav-content {
+  display: block;
+}
