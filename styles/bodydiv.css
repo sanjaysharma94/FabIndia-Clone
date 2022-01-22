@@ -1,0 +1,320 @@
+#body_div{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(245,245,245);
+}
+#body_div>div>h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #604b3b;
+    margin-bottom: 0;
+    margin-top: 80px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+}
+#body_div>div>p{
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: #604b3b;
+    letter-spacing: 2px;
+    width: 80%;
+    line-height: 30px;
+    margin: auto;
+}
+#mini-body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    color: #604b3b;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+}
+#mid-body,#mid-food{
+    width: 90%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+#mid-body>div>h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: MrsEavesOT-Roman;
+    line-height: 35px;
+    letter-spacing: 5px;
+    padding: auto;
+    color: #630614;
+}
+#mid-body>div>p{
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #604b3b;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 30px;
+    margin: auto;
+}
+#mid-img{
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+}
+#mid-img>div{
+    width: 50%;
+    margin: auto;
+}
+#mid-img>div>img{
+    margin-top: 50px;
+    width: 90%;
+}
+.mySlides>img{
+    margin-top: 50px;
+    width: 90%;
+}
+
+#food-div{
+    width: 90%;
+    height: 100px;
+   
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+    margin-left: 100px;
+}
+#food-div>div{
+    width: 50%;
+    margin: auto;
+}
+#food-div>div>img{
+    margin-top: 50px;
+    width: 90%;
+}
+#food-body{
+     width: 90%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 500px;
+}
+#food-body>div>h2{
+    font-size: 20px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: MrsEavesOT-Roman;
+    line-height: 35px;
+    letter-spacing: 5px;
+    padding: auto;
+    color: #630614;
+}
+#food-body>div>p{
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #604b3b;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 30px;
+    margin: auto;
+    margin-left: 90px;
+}
+#suggest{
+    width: 100%;
+    height: 550px;
+    margin-top: 530px;
+    background-color: rgb(245,245,245);
+}
+#suggest>h2{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: MrsEavesOT-Roman;
+    line-height: 35px;
+    letter-spacing: 5px;
+    padding: auto;
+    color: #630614;
+}
+.sub-suggest{
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+    
+}
+.sub-suggest>div{
+    margin: 10px;
+}
+.sub-suggest>div>a>img{
+    width: 100%;
+}
+.sub-suggest>div>a>p{
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #604b3b;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 30px;
+    margin: auto;
+}
+.sub-suggest>div>a{
+    text-decoration-line: none;
+}
+
+#fabedits{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(245,245,245);
+}
+#fabedits>h2{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: MrsEavesOT-Roman;
+    line-height: 35px;
+    letter-spacing: 5px;
+    padding: auto;
+    color: #630614;
+}
+.sub-fab{
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+}
+.sub-fab>div{
+    margin: 10px;
+}
+.sub-fab>div>a>img{
+    width: 390px;
+}
+.sub-fab>div>a>p{
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #604b3b;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 30px;
+    margin: auto;
+}
+.sub-fab>div>a{
+    text-decoration-line: none;
+}
+#offer{
+    width: 100%;
+}
+#offer>div{
+    width: 100%;
+    margin-top: 30px;
+}
+#offer>div>img{
+    width: 100%;
+}
+#youtube{
+    text-align: center;
+    height: 530px;
+}
+.youtube-video{
+    width: 80%;
+    height: 500px;
+}
+#footer{
+    width: 100%;
+    height: 740px;
+    background-color: rgb(111,16,27);
+}
+#footer>div>h2{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: MrsEavesOT-Roman;
+    line-height: 35px;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    color: white;
+
+}
+#footer>div>p{
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: rgb(178,149,115);
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 30px;
+    margin: auto;
+}
+.subscribe{
+    background: #916e5d;
+    padding: 10px;
+    height: 60px;
+    width: 410px;
+    margin: 20px 0;
+    border: none;
+    font-family: GothamRnd-Book;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 35%;
+    color: white;
+}
+#sub_footer{
+    width: 95%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    background-color: white;
+}
+.list-unstyled{
+ list-style-type: none;
+}
+.vl{
+    border-left: 1px solid gray;
+  height: 400px;
+  margin-top: 30px;
+}
+.footer_list{
+    margin: 10px 50px;
+}
+.footer_list>div>h3{
+    font-size: 15px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    letter-spacing: 1px;
+    padding: auto;
+    color: rgb(96,75,59);
+    font-weight: bold;
+    
+}
+.list-unstyled a{
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    letter-spacing: 1px;
+    padding: auto;
+    color: rgb(96,75,59);
+    font-weight: 400;
+    text-decoration-line: none;
+    
+}
+
+

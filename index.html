@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fab India</title>
+    <script type="module">
+      import navbar from './components/navbar.js';
+      let navbar_append = document.getElementById('navbar_append');
+      console.log('navbar_append:', navbar_append)
+      navbar_append.innerHTML = navbar();
+    </script>
+    <script src="./scripts/trainslide.js"></script>
+
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/slideshow.css">
+    <link rel="stylesheet" href="./styles/bodydiv.css">
+    <link rel="stylesheet" href="./styles/trainslide.css">
+    <link rel="stylesheet" href="./styles/mid-image-man.css">
+  </head>
+  <body>
+    <!-- Navbar DIV  -->
+    <div id="navbar_append"></div>
+    <!-- SlideShow DIV -->
+        <div id="slideshow">
+
+        <div class="myslider fade" style="display: block;">
+          <img src="https://www.fabindia.com/file/general/hp-mb-19jan22.jpg"alt="" class="slider-image"/>
+        </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-12jan22-1-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-14jan22-1-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-13dec21-2-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-31dec21-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-3jan22-1-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-3jan22-2-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <div class="myslider fade">
+              <img src="https://www.fabindia.com/file/general/hp-mb-14jan22-2-min.jpg"alt="" class="slider-image"/>
+            </div>
+            <a class="prev" onclick="pluseSlide(-1)">&#10094;</a>
+            <a class="next" onclick="pluseSlide(1)">&#10095;</a>
+            <div class="dotsbox" style="text-align: center;">
+              <span class="dot" onclick="currentslide(1)"></span>
+              <span class="dot" onclick="currentslide(2)"></span>
+              <span class="dot" onclick="currentslide(3)"></span>
+              <span class="dot" onclick="currentslide(4)"></span>
+              <span class="dot" onclick="currentslide(5)"></span>
+              <span class="dot" onclick="currentslide(6)"></span>
+              <span class="dot" onclick="currentslide(7)"></span>
+              <span class="dot" onclick="currentslide(8)"></span>
+            </div>
+        </div>
+    <!-- Body DIV -->
+    <div id="body_div">
+      <br>
+      <br>
+      <div>
+        <h1>WE HAVE SOMETHING FOR EVERYONE</h1>
+      </div>
+      <div>
+        <p>From handcrafted apparel to home linen & decor, bring a piece of artisanal heritage into your everyday and special occasions</p>
+      </div>
+
+      <div id="train_slide" >
+<div id="slidedisplay" onload="show()">
+        <div class="box" >
+            <!-- Image-box -->
+            <a href=""> <div class="slide-img" id="c1">
+              <img src="https://www.fabindia.com/file/general/hp-wehave-24nov21-6.jpg"alt="" class="slider-image"/>
+            <div>
+            <!--Detail Box  -->
+            <div class="detail-box">
+            <div class="type">
+              <h2>MEN'S KURTAS</h2>
+              <p>Warm woolen style featuring Heritage patterns</p></a>
+            </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+<div class="box">
+            <!-- Image-box -->
+            <a href=""> <div class="slide-img">
+              <img src="https://www.fabindia.com/file/general/hp-wehave-24nov21-1.jpg"alt="" class="slider-image"/>
+            <div>
+            <!--Detail Box  -->
+            <div class="detail-box">
+            <div class="type">
+              <h2>KURTAS</h2>
+              <p>Handcrafted in warm fabrics, featuring traditional crafts</p></a>
+            </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+<div class="box ">
+            <!-- Image-box -->
+            <a href=""> <div class="slide-img">
+              <img src="https://www.fabindia.com/file/general/hp-wehave-24nov21-2.jpg"alt="" class="slider-image"/>
+            <div>
+            <!--Detail Box  -->
+            <div class="detail-box">
+            <div class="type">
+              <h2>SARIS</h2>
+              <p>In hues of the season and timeless handblock prints</p></a>
+            </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+<div class="box  ">
+            <!-- Image-box -->
+            <a href=""> <div class="slide-img">
+              <img src="https://www.fabindia.com/file/general/hp-wehave-24nov21-3.jpg"alt="" class="slider-image"/>
+            <div>
+            <!--Detail Box  -->
+            <div class="detail-box">
+            <div class="type">
+              <h2>DRESSES</h2>
+              <p>Smart silhouttes to create stylish winter-ready looks</p></a>
+            </div>
+            </div>
+          </div>
+      </div>
+</div>
+</div>
+</div>
+ <div id="mini-body">
+      <div>
+        <h1>LATEST FROM THE SEASON</h1>
+      </div>
+      <div id="mid-body">
+          <div>
+        <h2>FOR HER</h2>
+        <p>Welcome the nip in the air with handwoven apparel & warm knits from our winter collection.</p>
+        </div>
+        <div>
+            <h2>FOR HIM</h2>
+            <p>Embrace the winter chill while looking dapper in fresh, handcrafted styles from our new collection.</p>
+        </div>
+      </div>
+        
+      <div id="mid-img">
+        <div id="mid-image-women"></div>
+        
+        <div class="mid-image-men">
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts-24nov21-1-min.jpg">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts-24nov21-3-min.jpg">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts-27sep-1-min.jpg">
+              </div>
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts-27sep-2-min.jpg">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts-9aug21-1-min.jpg">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts1-21july21-min.jpg">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="https://www.fabindia.com/file/general/mn-hp-lfts-27sep-3-min.jpg">
+              </div>
+
+          </div>
+      </div>
+      </div>
+      <!-- food body -->
+      <div id="mid-body">
+          <div>
+        <h2>FOOD</h2>
+        <p>Time to eat good & feel well with a range of organic food choices for every meal</p>
+        </div>
+        <div>
+            <h2>BEAUTY</h2>
+            <p>Essentials to nourish your skin, body & hair with toxin-free personal care range that is made with natural bioactives</p>
+        </div>
+      </div>
+      <!-- food -->
+<div id="food-div">
+  <div id="food">
+    <img src="https://www.fabindia.com/file/general/hp-fb-17nov21-1-min.jpg" alt="">
+  </div>
+  <div id="beauty">
+    <img src="https://www.fabindia.com/file/general/hp-beauty-2dec21-1-min.jpg" alt="">
+  </div>
+</div>
+<!-- furniture -->
+<div id="food-body">
+          <div>
+        <h2>HOME DECOR</h2>
+        <p>Make your home winter-ready with our range of linens, Home decor</p>
+        </div>
+        <div>
+            <h2>FURNITURE</h2>
+            <p>Make your home summer-ready with our range of linens,furniture</p>
+        </div>
+      </div>
+
+      <!-- home and furniture -->
+      <div id="food-div">
+  <div id="food">
+    <img src="https://www.fabindia.com/file/general/hp-hdf-mob-24nov21-1-min.jpg" alt="">
+  </div>
+  <div id="beauty">
+    <img src="https://www.fabindia.com/file/general/hp-hdf4-mob-28sep21-min.jpg" alt="">
+  </div>
+</div>
+<!-- ---------------------------SUGGESTED  -->
+<div id="suggest">
+  <h2>SUGGESTED FOR YOU</h2>
+  <div class="sub-suggest">
+  <div>
+   <a href=""><img src="https://www.fabindia.com/file/general/hp-sfu-15jan22-4.jpg" alt="">
+    <p>COTTON TWILL KURTA</p>
+    <p>M.R.P. ₹ 2,199.00</p></a> 
+  </div>
+  <div>
+    <a href=""><img src="https://www.fabindia.com/file/general/hp-sfu-15jan22-5.jpg" alt="">
+    <p>COTTON LONG KURTA</p>
+    <p>M.R.P. ₹ 1,499.00</p></a>
+  </div>
+  <div>
+    <a href=""><img src="https://www.fabindia.com/file/general/hp-sfu-15jan22-1.jpg" alt="">
+    <p>COTTON SLIM-FIT KURTA</p>
+    <p>M.R.P. ₹ 1,499.00</p></a>
+  </div>
+  <div>
+    <a href=""><img src="https://www.fabindia.com/file/general/hp-sfu-15jan22-3.jpg" alt="">
+    <p>COTTON LONG FIT KURTA</p>
+    <p>M.R.P. ₹ 1,199.00</p></a>
+  </div>
+  </div>
+</div>
+<!-- ---------------------------------fab edits -->
+<div id="fabedits">
+  <h2>FAB EDITS</h2>
+      <div class="sub-fab">
+          <div>
+          <a href=""><img src="https://www.fabindia.com/file/general/fab1-2dec21.jpg" alt="">
+            <p>This winter, envelope your skin in intense moisture with a range of body lotions, butters & yogurts.</p></a> 
+          </div>
+          <div>
+            <a href=""><img src="https://www.fabindia.com/file/general/fab2-2dec21.jpg" alt="">
+            <p>It's the season for cozy comforts Indulgue in comortable quilts made for a good night's rest</p></a>
+          </div>
+          <div>
+            <a href=""><img src="https://www.fabindia.com/file/general/fab3-2dec21.jpg" alt="">
+            <p>Wrap yourself in shawls that are handcrafted with love. Intricate designs, soft fabrics and myriad colours await you!</p></a>
+          </div>
+  </div>
+  </div>
+  <!-- ----------------------------------OFFER PAGE -->
+  <div id="offer">
+    <h1>LET’S SALE AWAY!</h1>
+    <div>
+      <img src="https://www.fabindia.com/file/general/hp-bkb-13dec21-1-min.jpg" alt="">
+    </div>
+  </div>
+  <!-- -------------------------------video -->
+  <div id="offer">
+    <h1>FAM THAT'S AS FAB AS YOU - JOIN US!</h1>
+    <p>Join our mailing list for exclusive access to the latest fashion trends, tips, and more.</p>
+    <div id="youtube">
+    <iframe width="1190" height="480" src="https://www.youtube.com/embed/YQilPoeR_F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- --------------------------------------Footer -->
+  <div id="footer">
+    <div>
+      <h2>KEEP YOURSELF UPDATED</h2>
+      <p>For new launches, campaigns and seasons favorites</p>
+      <a href=""><button class="subscribe">SUBSCRIBE</button></a>
+    </div>
+    <div id="sub_footer">
+      <section class="footer_list">
+        <div >
+          <h3>LET US HELP YOU </h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.fabindia.com/track-your-order">ORDER TRACKING</a></li>
+            <li><a href="https://www.fabindia.com/bulk-orders">BULK ORDERS</a></li>
+            <li><a href="https://www.fabindia.com/store-locator">STORE LOCATOR</a></li>
+            <li><a href="https://www.fabindia.com/store-locator">FRANCHISE FORM</a></li>
+            <li><a href="https://www.fabindia.com/furniturewarranty">FURNITURE WARRANTY POLICY</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="vl"></div>
+      <section class="footer_list">
+        <div >
+          <h3>SUPPORT </h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.fabindia.com/customer-service">CUSTOMER SERVICE</a></li>
+            <li><a href="https://www.fabindia.com/how-to-order">HOW TO ORDER</a></li>
+            <li><a href="https://www.fabindia.com/billing-and-payments">BILLING AND PAYMENTS</a></li>
+            <li><a href="https://www.fabindia.com/shipping-and-delivery">SHIPPING AND DELIVERY</a></li>
+            <li><a href="https://www.fabindia.com/return-and-exchanges">RETURNS AND EXCHANGES</a></li>
+      <li><a href="https://www.fabindia.com/faqs">FAQS</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="vl"></div>
+      <section class="footer_list">
+        <div >
+          <h3>COMPANY </h3>
+          <ul class="list-unstyled">
+        <li><a href="https://www.fabindia.com/about-us">ABOUT US</a></li>
+        <li><a href="https://www.fabindia.com/investor-relations">INVESTOR RELATIONS</a></li>
+        <li><a href="https://www.fabindia.com/catalogue">STYLE GUIDES</a></li>
+        <li><a href="https://www.fabindia.com/contact-us">CONTACT US</a></li>
+        <li><a href="https://www.fabindia.com/careers">CAREERS</a></li>
+      <li><a href="https://www.fabindia.com/privacy-policy">PRIVACY POLICY</a></li>
+      <li><a href="https://www.fabindia.com/terms-of-use">TERMS OF USE</a></li>
+        <li><a href="https://www.fabindia.com/business-enquiries">BUSINESS ENQUIRIES</a></li>
+      <li><a href="http://www.fabindiaschools.org/bali/index.html">THE FABINDIA SCHOOLS</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="vl"></div>
+      <section class="footer_list">
+        <div>
+          <h3>ABOUT FABINDIA </h3>
+          <ul class="list-unstyled">
+        <li><a href="https://www.fabindia.com/60-years-of-fabindia">60 YEARS OF FABINDIA</a></li>
+        <li><a href="https://www.fabindia.com/philosophy">PHILOSOPHY</a></li>
+        <li><a href="https://www.fabindia.com/about-fabindia-products">ABOUT FABINDIA PRODUCTS</a></li>
+        <li><a href="https://www.fabindia.com/organic-certification">ORGANIC CERTIFICATION</a></li>
+        <li><a href="https://www.fabindia.com/fabric-care">FABRIC CARE</a></li>
+      <li><a href="https://www.fabindia.com/fabcafe">FABCAFE</a></li>
+      <li><a href="https://www.fabindia.com/ids">INTERIOR DESIGN SOLUTIONS</a></li>
+          </ul>
+        </div>
+      </section>
+      </div>
+        <div>
+          <p>© COPYRIGHT 2021 FABINDIA.COM. ALL RIGHTS RESERVED.</p>
+        </div>
+  </div>
+
+  </body>
+</html>
+<script src="./scripts/slideshow.js"></script>
+<script src="./scripts/mid-image-men.js"></script>
+<script src="./scripts/mid-image-food.js"></script>
+<script src="./scripts/mid-image-women.js"></script>
+
+
+
