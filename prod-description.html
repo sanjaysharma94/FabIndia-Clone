@@ -101,16 +101,28 @@
     console.log(no.innerHTML);
 
     var product_desc = JSON.parse(localStorage.getItem("product_desc"))
+
+    var cartarr = JSON.parse(localStorage.getItem("cartit")) || []
+
+
+
       let image = document.getElementById("maindescimg")
-      image.src=product_desc.shirtimage
+      image.src=product_desc.image_url
       let rate = document.getElementById("pricerate")
       pricerate.textContent=product_desc.price
       let clr = document.getElementById("clrindicator")
-      clr.style.backgroundColor=product_desc.shirtclr
+      clr.style.backgroundColor=product_desc.color
       let descript = document.getElementById("descriptio")
-      descript.innerText=product_desc.descip
+      descript.innerText=product_desc.title
 
+document.getElementById("addcart").addEventListener("click",cart);
 
+function cart(){
+cartarr.push(product_desc);
+console.log(cartarr)
+localStorage.setItem("cartit",JSON.stringify(cartarr))
+window.location.href = "cart.html"
+}
 
 
 </script>
