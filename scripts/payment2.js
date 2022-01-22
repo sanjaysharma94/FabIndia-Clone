@@ -73,7 +73,10 @@ function check(event) {
   var Select = f.inputotp.value;
   if (otp == Select) {
     swal("Ordered Successfully!", "Congratulations", "success");
-    // window.location.href = "./index.html"
+    setTimeout(() => {
+       window.location.href = "./index.html"
+    }, 2000);
+    
   } else {
     swal("Cancelled", "Invalid OTP", "error");
   }
