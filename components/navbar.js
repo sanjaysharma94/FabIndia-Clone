@@ -6,7 +6,7 @@ return `<div id="header">
                  <a href=""><img class="iconimg" src="https://www.fabindia.com/file/general/icon-storelocator-black.png" alt="Store Locator"/></a>
             </div>
             <div>
-                <a href=""><img class="iconimg" src="https://www.fabindia.com/file/general/icon-signin-black.png" alt="Store Locator"/></a>
+                <a href="./signUp.html"><img class="iconimg" src="https://www.fabindia.com/file/general/icon-signin-black.png" alt="Store Locator"/></a>
             </div>
        
         </div>
