@@ -6,12 +6,12 @@ return `<div id="header">
                  <a href=""><img class="iconimg" src="https://www.fabindia.com/file/general/icon-storelocator-black.png" alt="Store Locator"/></a>
             </div>
             <div>
-                <a href=""><img class="iconimg" src="https://www.fabindia.com/file/general/icon-signin-black.png" alt="Store Locator"/></a>
+                <a href="./signUp.html"><img class="iconimg" src="https://www.fabindia.com/file/general/icon-signin-black.png" alt="Store Locator"/></a>
             </div>
        
         </div>
         <div id="logo">
-            <a href=""><img class="logo" src="https://www.fabindia.com/file/general/Fabindia_logo.svg" alt="Store Locator"/></a>
+            <a href="./index.html"><img class="logo" src="https://www.fabindia.com/file/general/Fabindia_logo.svg" alt="Store Locator"/></a>
         </div>
         <div id="nav-right">
             <div id="nav-right-sub">
@@ -27,7 +27,7 @@ return `<div id="header">
                 <a href=""><img class="iconimg" src="https://www.fabindia.com/file/general/icon-heart-black.png" alt="Store Locator"/></a>
             </div>
             <div>
-                <a href=""><img class="iconimg" src="https://www.fabindia.com/file/general/icon-bag-black.png" alt="Store Locator"/></a>
+                <a href="./cart.html"><img class="iconimg" src="https://www.fabindia.com/file/general/icon-bag-black.png" alt="Store Locator"/></a>
             </div>
         </div>
         </div>
