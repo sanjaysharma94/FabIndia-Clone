@@ -5,6 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <script type="module">
+            import navbar from './components/navbar.js';
+            let navbar_append = document.getElementById('navbar_append');
+            console.log('navbar_append:', navbar_append)
+            navbar_append.innerHTML = navbar();
+          </script>
 
         <style>
 
@@ -102,9 +109,9 @@
     </head>
 
     <body>
-
+        <div id="navbar_append"></div>
         <div class="mainDiv">
-            <p>Men's Shirts(461 results)</p>
+            <!-- <p>Men's Shirts(461 results)</p> -->
 
             <div class="selectBtn">
                 <!-- <label id="priceSort" for="">Sort By:</label> -->
