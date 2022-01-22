@@ -28,7 +28,7 @@ function showcart(arr){
     sub.textContent = elem.subletter
 
     let price = document.createElement("p");
-    price.textContent = elem.price
+    price.textContent = "₹"+ elem.price
 
     let img = document.createElement("img");
     img.src= elem.image_url
@@ -56,7 +56,7 @@ function showTotal(totalValue){
         
         total.textContent = `₹ ${totalValue.toFixed(2)}`;
       ttvalue = totalValue
-      document.getElementById("totalppp").textContent = ttvalue
+      document.getElementById("totalppp").textContent = "₹"+ ttvalue
         
     }
 
