@@ -25,7 +25,7 @@ function showcart(arr){
     
 
     let sub = document.createElement("p");
-    sub.textContent = elem.subletter
+    sub.textContent = elem.color
 
     let price = document.createElement("p");
     price.textContent = "₹"+ elem.price
