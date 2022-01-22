@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fab india</title>
     <link rel="stylesheet" href="./styling/product_description.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module">
+        import navbar from './components/navbar.js';
+        let navbar_append = document.getElementById('navbar_append');
+        console.log('navbar_append:', navbar_append)
+        navbar_append.innerHTML = navbar();
+      </script>
 </head>
 <body style="background-color: #f9f8f1;">
+    <div id="navbar_append"></div>
     <!-- <div id="maindescdiv"></div>
     -->
     <div id="descmain">
