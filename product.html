@@ -85,15 +85,7 @@
                 display: flex;
             }
 
-            /* .selectBtn {
-                display: flex;
-            } */
-
-            .mainDiv {
-                display: flex;
-                justify-content: space-evenly;
-                padding-top: 5%;
-            }
+            
 
             #sDiv {
                 display: flex;
@@ -111,20 +103,14 @@
     <body>
         <div id="navbar_append"></div>
         <div class="mainDiv">
-            <!-- <p>Men's Shirts(461 results)</p> -->
+            <!-- <div><p>Men's Shirts(461 results)</p></div> -->
 
             <div class="selectBtn">
-                <!-- <label id="priceSort" for="">Sort By:</label> -->
                 <select name="" id="priceSort" onchange="handlePriceSort()">
                     <option value="">Sort by price</option>
                     <option value="low">Sort by price: low to high</option>
                     <option value="high">Sort by price: high to low</option>
                 </select>
-                <!-- <select name="" id="nameSort">
-                    <option value="">Sort by Alphabet</option>
-                    <option value="asc">Ascending</option>
-                    <option value="dsc">Dscending</option>
-                </select> -->
             </div>
         </div>
 
