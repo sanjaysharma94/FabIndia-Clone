@@ -1,0 +1,181 @@
+#descmain{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#divcorousel{
+    width:13%;
+    border: 1px solid black;
+    height: 450px;
+    margin-right: 2%;
+}
+#maindesc{
+    width:33%;
+    border: 1px solid black;
+    height: 650px;
+    margin-right: 2%;
+}
+#proddesc{
+    width:48%;
+    border: 1px solid transparent;
+    height: 750px;
+
+}
+#maindescimg{
+    width: 100%;
+    height: 100%;
+}
+#clr{
+    margin-bottom:0;
+    margin-top: 10px;
+}
+#clrindicator{
+    border: .5px solid black;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin: auto;
+    background-clip: padding-box;
+}
+#indicator{
+    border: .5px solid black;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-left: 3px;
+    background-clip: padding-box;
+    padding: 2px;
+    
+}
+#descriptio{
+    margin-bottom: 0;
+    line-height: 0;
+}
+#SKU{
+    color: 6574a5;
+    font-weight: 100;
+    font-style: 100;
+    font: .85em sans-serif;
+    margin-bottom: 3px;
+    
+}
+#sizediv{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(4,65px);
+    grid-gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+.sizebtn{
+    border: 1px solid #070505;
+    width: 65px;
+    height: 25px;
+    background-color: #f9f8f1;
+    color: 6574a5;
+}
+#selectsize{
+    line-height: 0;
+    margin-top: 20px;
+}
+#divs3{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+    margin-top: 27px;
+    
+}
+.itemno{
+    width: 40px;
+    height: 32px;
+    background-color: white;
+    
+}
+#addcart {
+    
+    width: 110px;
+    height: 36px;
+    background-color: #e5cc76;
+    border: transparent;
+    font-weight: bold;
+    
+}
+#wish{
+    width: 120px;
+    height: 36px;
+    background-color: #f9f8f1;
+    border: transparent;
+    margin-left: -5px;
+    font-weight: bold;
+}
+#pininput{
+    height: 36px;
+    border-radius: 3px;
+}
+#pinchk{
+    height: 36px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    margin-left: -9px;
+
+}
+.rate{
+    font-weight: bolder;
+    font-size: x-large;
+}
+#heart{
+    width: 35px;
+    height: 38px;
+    margin-right: -5px;
+    margin-top: -2px;
+}
+#connectstore{
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+#delivery{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.store{
+    height:36px;
+    width: 200px;
+    border-radius: 5px;
+}
+#store1{
+    background-color: #e5cc76;
+    border: transparent;
+}
+#detailsdiv{
+    display: grid;
+    grid-template-columns: 220px 170px;
+
+}
+.detailslist{
+    color:#8c8b87;
+}
+#no{
+    height: 32px;
+    width: 40px;
+    resize: none;
+    text-align: center;
+    font-size: larger;
+    padding-top: 7px;
+    padding-right: 1px;
+    border: 1px solid #070505;
+}
+#nodiv{
+    display: flex;
+    height: 32px;
+    width: 125px;
+}
+#features{
+    display: flex;
+    width: 70%;
+    height: 40px;
+    justify-content: space-between;
+    margin: auto;
+}
