@@ -1,0 +1,254 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            body {
+                background-color: white;
+                margin: 0;
+            }
+
+            #cont {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                flex-flow: row;
+                margin-left: 1%;
+                gap: 45px;
+            }
+
+            .img {
+                width: 325px;
+                height: 450px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+            .img:hover {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+
+            .subletter {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 16px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            .subletter:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .price {
+                width: 200px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: -17px;
+                margin-bottom: 0px;
+                font-size: 16px;
+                color: rgb(116, 37, 37);
+            }
+
+            #priceSort {
+                height: 40px;
+                margin-left: 75%;
+                margin-bottom: 0%;
+            }
+
+            #nameSort {
+                height: 40px;
+                margin-left: 2%;
+                margin-bottom: 0%;
+            }
+
+            #color {
+                margin: 3%;
+                cursor: pointer;
+            }
+            
+            .fDiv {
+                display: flex;
+            }
+
+            /* .selectBtn {
+                display: flex;
+            } */
+
+            .mainDiv {
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: 5%;
+            }
+
+            #sDiv {
+                display: flex;
+                gap: 2%;
+            }
+
+            .para {
+                width: 140px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="mainDiv">
+            <p>Men's Shirts(461 results)</p>
+
+            <div class="selectBtn">
+                <!-- <label id="priceSort" for="">Sort By:</label> -->
+                <select name="" id="priceSort" onchange="handlePriceSort()">
+                    <option value="">Sort by price</option>
+                    <option value="low">Sort by price: low to high</option>
+                    <option value="high">Sort by price: high to low</option>
+                </select>
+                <!-- <select name="" id="nameSort">
+                    <option value="">Sort by Alphabet</option>
+                    <option value="asc">Ascending</option>
+                    <option value="dsc">Dscending</option>
+                </select> -->
+            </div>
+        </div>
+
+        <div id="sDiv">
+
+            <div id="color" onclick="filterColor()">
+                <h3>Color</h3>
+                <p>Blue</p>
+                <p>Rde</p>
+                <p>Blue</p>
+
+                <hr>
+
+                <h3>Price</h3>
+                <p class="para">₹0 - ₹1,999 (440)</p>
+                <p>₹2,000 - ₹2,999</p>
+                <p>₹3,000 - ₹3,999</p>
+
+                <hr>
+
+                <h3>Category</h3>
+                <p class="para">Bush Shirts (134)</p>
+                <p>Casual Shirts (257)</p>
+                <p>Kurta Shirts (70)</p>
+
+                <hr>
+
+                <h3>Size</h3>
+                <p class="para">42/L </p>
+                <p>40/M </p>
+                <p>38/S </p>
+
+                <hr>
+
+                <h3>Fit</h3>
+                <p class="para">Comfort Fit (255)</p>
+                <p>Slim Fit (184)</p>
+                <p>Regular Fit (22)</p>
+
+                <hr>
+            </div>
+
+            <div id="cont"></div>
+            
+        </div>
+        
+    </body>
+
+</html>
+
+
+<script>
+
+
+    function handlePriceSort() {
+        var selected = document.querySelector("#priceSort").value
+    
+        if(selected == "low"){
+        var selected = document.querySelector("#priceSort").value
+            products.sort(function(a,b) {
+                return Number(a.price) - Number(b.price);
+            });
+        } else if(selected == "high"){
+            products.sort(function(a,b) {
+                return Number(b.price) - Number(a.price);
+            });
+         }
+         displayPage(products)
+    } function handlePriceSort() {
+        var selected = document.querySelector("#priceSort").value
+    
+        if(selected == "low"){
+        var selected = document.querySelector("#priceSort").value
+            products.sort(function(a,b) {
+                return Number(a.price) - Number(b.price);
+            });
+        } else if(selected == "high"){
+            products.sort(function(a,b) {
+                return Number(b.price) - Number(a.price);
+            });
+         }
+         displayPage(products)
+    }
+
+
+
+    let products = JSON.parse(localStorage.getItem("product"))
+    console.log(products)
+
+    displayPage(products);
+
+    function displayPage(products) {
+        document.querySelector("#cont").textContent = ""
+
+        products.map(function (elem) {
+            let mDiv = document.createElement("div");
+            mDiv.setAttribute("class", "mDiv");
+
+            let img = document.createElement("img")
+            img.setAttribute("class", "img");
+            img.setAttribute("src", elem.image_url)
+            img.setAttribute("title", elem.title)
+
+            let subletter = document.createElement("p")
+            subletter.setAttribute("class", "subletter")
+            subletter.innerText = elem.subletter;
+
+            let price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.innerText = "M.R.P. ₹ "+ elem.price;
+
+            mDiv.append(img, subletter, price)
+
+            document.querySelector("#cont").append(mDiv)
+
+        })
+        
+
+    }
+
+
+
+    function filterColor() {
+
+        let ans = document.querySelector("#color").value
+        let res = products.filter(function(elem) {
+            return elem.color == ans
+        })
+        displayPage(res)
+    }
+        
+    
+
+</script>
